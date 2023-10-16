@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<h2>Organização das paletras</h2>
+
+<% @data['data'].each_with_index do |track, index| %>
+	<h4>Track <%= index + 1 %></h4>
+	<table class="table table-hover">
+		<thead>
+		  <tr>
+		  	<th>Horario de Inicio</th>
+		    <th>Nome</th>
+		    <th>Duração</th>
+		  </tr>
+		</thead>
+
+		<tbody>
+		  	<% track.each do |item| %>
+			    <tr>
+			    	<td><%= item['start_time'].to_time.strftime("%H:%M") %></td>
+			      	<td><%= item['name'] %></td>
+			      	<td><%= item['duration'] %> min</td>
+		      	</tr>
+			<% end %>
+		</tbody>
+	</table>
+	<br/>
+<% end %>
+
+<%= link_to "Voltar", lectures_path, class: "btn btn-light" %>

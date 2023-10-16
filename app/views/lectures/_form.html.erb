@@ -1,0 +1,13 @@
+<%= form_with(url: lecture ? lecture_path(params[:id]) : lectures_path, method: lecture ? :put : :post) do |form| %> 
+    <%= form.label :name, 'Nome'%>
+    <%= form.text_field :name, value: lecture ? lecture['name'] : '', class:'form-control' %>
+
+    <%= form.label :duration, 'Duração' %>
+    <%= form.number_field :duration, value: lecture ? lecture['duration'] : '', class: 'form-control' %>
+
+  <br/>
+  <div>
+    <%= form.submit "Salvar", class: "btn btn-light" %>  
+    <%= link_to "Voltar", lectures_path, class: "btn btn-light" %>
+  </div>
+<% end %>
