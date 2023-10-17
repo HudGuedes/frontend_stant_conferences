@@ -33,5 +33,5 @@ Agora, siga estas etapas:
 
 <h2>Importação de Arquivo CSV</h2>
 
-- Se preferir importar um arquivo CSV, após clicar em "Escolher Arquivo" e selecionar o arquivo CSV, clique em "Importar".
+- Se preferir importar um arquivo CSV, após clicar em "Escolher Arquivo" e selecionar o arquivo CSV, clique em "Organizar".
 - Você será direcionado para uma página que exibe as conferências importadas, incluindo o horário de início, o nome da palestra e a duração
